@@ -22,37 +22,121 @@
             background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/603/original/Northern_Lights.jpg?1683307049");
             background-color: #cccccc;
             background-size: cover;
-            background-repeat: no-repeat;
-            background-position: relative;
+            background-repeat: repeat;
+            background-position: absolute;
+            width: 100vw;
             height: 100vh;
         }
 
         img {
-            width: 250px;
+            width: 300px;
+            height: auto;
+
+
+
+        }
+
+        nav.navbar {
+            margin-right: 30px;
         }
 
         h1 {
             color: white;
             font-family: 'dancing script';
-            font-size: 70px;
+            font-size: 40px;
             text-align: center;
             margin-top: 70px;
+            height: 100vh;
+        }
+
+        footer {
+            margin-bottom: 20px;
+        }
+
+        p {
+            color: white;
+            font-family: 'dancing script';
+            font-size: 30px;
+            text-align: center;
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+
+
+        button {
+            text-align: center;
+            flex-direction: row;
+        }
+
+        a {
+            font-size: 20px;
+            margin: 0 20px;
+            padding: 10px 14px;
+            color: white;
+            background-color: var(--primary-color);
+
+            border-radius: 50px;
+        }
+
+        a:hover {
+            color: var(--primary-color);
+            background-color: var(--third-color);
+            transition: all 100ms ease-in-out;
+        }
+
+        .second-line {
+            color: white;
+            font-family: 'dancing script';
+            font-size: 30px;
+            text-align: right;
+
+
         }
     </style>
 </head>
 
 <body>
-    <heading>
-        <div class="container">
-            <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/608/original/Gif_Northern_Lights.gif?1683310706"
-                class="img-fluid rounded shadow-sm position-sticky" />
+    <nav class="navbar">
+        <div class="container text-center">
+            <div class="row">
+                <div class="col-sm-3"><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/608/original/Gif_Northern_Lights.gif?1683310706"
+                        class="img-fluid rounded" width="100px" height="40px" id=lights alt="Northern_Lights image" />
+                </div>
+                <div class="col-sm-3">
+                    <img src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/607/original/giphy.gif?1683310558"
+                        class="img-fluid rounded" width="100px" height="40px" id=lights alt="Northern_Lights image" />
+                </div>
+                <div class="col-sm-3"><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/608/original/Gif_Northern_Lights.gif?1683310706"
+                        class="img-fluid rounded" width="100px" height="40px" id=lights alt="Northern_Lights image" />
+                </div>
+                <div class="col-sm-3"><img
+                        src="https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/607/original/giphy.gif?1683310558"
+                        class="img-fluid rounded" width="100px" height="40px" id=lights alt="Northern_Lights image" />
+                </div>
+            </div>
         </div>
-        </header>
-        <h1>Norway The Home Of Northern Lights</h1>
+    </nav>
+    <div class="container">
 
-        <script>
+        <h1>Everything You Need to Know to See the Northern Lights
+            in Norway <br><span class="second-line ">From Svalbard to Tromsø, here are the best places to
+                see
+                the Northern Lights in
+                Norway.</span>
+            <button type="button" class="btn btn-success btn-sm"><a
+                    href="https://www.travelandleisure.com/trip-ideas/nature-travel/norway-when-to-see-northern-lights"
+                    rel="nofollow" target="_blank">Click here</a></button>
+        </h1>
 
-        </script>
+
+
+    </div>
+    <script>
+
+    </script>
 </body>
 
 </html>
