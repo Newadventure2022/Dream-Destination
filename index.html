@@ -20,13 +20,21 @@
     <style>
         body {
             background-image: url("https://s3.amazonaws.com/shecodesio-production/uploads/files/000/080/603/original/Northern_Lights.jpg?1683307049");
-            background-color: #cccccc;
-            background-size: auto;
+            background-color: #fff;
+            background-position: center center;
             background-repeat: no-repeat;
-            background-position: absolute;
-            width: 100vw;
-            height: 200vh;
+            background-attachment: fixed;
+            background-size: cover;
+            background-color: #464646;
         }
+
+        body {
+            font-family: 'dancing script';
+            height: 100%;
+            display: block;
+        }
+
+
 
         img {
             width: 300px;
@@ -35,6 +43,7 @@
 
         nav.navbar {
             margin-right: 30px;
+            position: sticky;
         }
 
         h1 {
@@ -42,11 +51,11 @@
             font-family: 'dancing script';
             font-size: 40px;
             text-align: center;
-            margin-top: 10px;
+            margin-top: 3rem;
+            position: relative;
+
 
         }
-
-
 
         p {
             color: white;
@@ -55,16 +64,17 @@
             text-align: center;
             margin-left: 10px;
             margin-right: 10px;
+            position: relative;
         }
 
         .credits {
-
+            font-family: Arial, Helvetica, sans-serif;
             color: white;
             text-align: center;
             font-size: 20px;
-            margin-top: 0;
-            margin-bottom: 1rem;
-            height: 50vh;
+            margin-top: 25rem;
+
+
         }
 
 
@@ -103,6 +113,7 @@
 
         .linkedin {
             color: yellow;
+            font-size: 15px;
             margin: 10px 0 0 0;
             text-decoration: none;
         }
@@ -114,6 +125,7 @@
 
         .gitHub {
             color: yellow;
+            font-size: 15px;
             margin: 10px 0 0 0;
             text-decoration: none;
         }
@@ -122,10 +134,16 @@
             text-decoration: underline;
 
         }
+
+        #footer-credits {
+            font-family: Arial, Helvetica, sans-serif;
+            font-size: 15px;
+        }
     </style>
 </head>
 
 <body>
+
     <div class="container wrapper">
         <nav class="navbar">
             <div class="container gif-images">
@@ -185,15 +203,11 @@
         <footer>
 
             <div class="credits">
-
-                <p>
-
+                <p id="footer-credits">
                     This page was built by:
                     <a href="https://www.linkedin.com/in/cecelia-c-975193ab/" target="_blank" class="linkedin">
                         Cecelia Corona-Doran
                     </a>
-
-
                     Open-source coded on
                     <a href="https://github.com/Newadventure2022/Celias-Projects-for-SheCodes" target="_blank"
                         class="gitHub">GitHub</a>
