@@ -366,7 +366,7 @@
 
         let apiKey = "bb46c05d46c0caa623676d4d5ff608cb";
         let units = "metric";
-        let city = "tromsø ";
+        let city = ["tromsø", "Paris"];
         let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
         axios.get(apiUrl).then(showTemperature);
